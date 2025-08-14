@@ -1,7 +1,11 @@
-# 👋 Hi, I'm Andrei Cristea  
+# [![Typing SVG](https://readme-typing-svg.herokuapp.com?size=24&color=00F7FF&center=true&vCenter=true&width=500&lines=Hi%2C+I'm+Andrei+Cristea;Aspiring+Software+Engineer;Full-Stack+Developer;Loves+Backend+Systems)](https://git.io/typing-svg)
 
 <p align="center">
-  <!-- Example animation (replace link with yours) -->
+  <!-- GitHub Stats -->
+  <img src="https://github-readme-stats.vercel.app/api?username=Andrei8cristea&show_icons=true&theme=tokyonight&hide_border=true" alt="GitHub Stats" />
+</p>
+
+<p align="center">
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Andrei8cristea&layout=compact&theme=tokyonight&hide_border=true" alt="Top Languages" />
 </p>
 
