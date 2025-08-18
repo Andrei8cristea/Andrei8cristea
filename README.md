@@ -1,4 +1,4 @@
-# [![Typing SVG](https://readme-typing-svg.herokuapp.com?size=24&color=00F7FF&center=true&vCenter=true&width=500&lines=Hi%2C+I'm+Andrei+Cristea;Aspiring+Software+Engineer;Full-Stack+Developer;Loves+Backend+Systems)](https://git.io/typing-svg)
+# [![Typing SVG](https://readme-typing-svg.herokuapp.com?size=24&color=00F7FF&center=true&vCenter=true&width=500&lines=Hi%2C+I'm+Andrei+Cristea;Aspiring+Software+Engineer;Loves+Backend+Systems)](https://git.io/typing-svg)
 
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Andrei8cristea&layout=compact&theme=tokyonight&hide_border=true" alt="Top Languages" height="150" />
