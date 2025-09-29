@@ -1,4 +1,4 @@
-# [![Typing SVG](https://readme-typing-svg.herokuapp.com?size=24&color=00F7FF&center=true&vCenter=true&width=500&lines=Hi%2C+I'm+Andrei+Cristea;Aspiring+Software+Engineer;Loves+Backend+Systems)](https://git.io/typing-svg)
+# [![Typing SVG](https://readme-typing-svg.herokuapp.com?size=24&color=00F7FF&center=true&vCenter=true&width=500&lines=Hi%2C+I'm+Andrei+Cristea;Aspiring+Software+Engineer)](https://git.io/typing-svg)
 
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Andrei8cristea&layout=compact&theme=tokyonight&hide_border=true" alt="Top Languages" height="150" />
@@ -8,13 +8,11 @@
 
 
 
-🎯 **Aspiring Software Engineer** | 💻 Passionate about backend systems, clean code, and problem-solving | 📍 Bucharest, Romania  
+🎯 **Aspiring Software Engineer** | 📍 Bucharest, Romania  
 
 ---
 
-## 🚀 About Me  
-I'm a **Computer Science student** at the University of Bucharest (Class of 2027) with a strong foundation in **data structures, algorithms, and full-stack development**.  
-I love building tools from scratch, exploring low-level programming, and integrating modern web technologies with solid backend systems.  
+I'm a **Computer Science student** at the University of Bucharest (Class of 2027)
 
 ---
 
@@ -55,8 +53,7 @@ Romanian *(native)* · English *(fluent)*
 - **🎮 2048 + Database** — Recreated the 2048 game with backend integration to store and manage top scores.  
 - **🗂️ x86 File System Manager** — Simulated file operations in memory: add, delete, defragment, and analyze directory sizes.  
 - **✈ Airways SQL Database** — Designed and queried a relational database for airline operations.  
-
-> 🖱️ *Check out my pinned repositories below for code, demos, and documentation.*  
+ 
 
 ---
 
