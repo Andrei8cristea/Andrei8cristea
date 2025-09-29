@@ -74,7 +74,7 @@ GPA: 8.61/10 *(Year 1)*
 ---
 
 ## 📫 How to Reach Me  
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-blue?logo=linkedin)](www.linkedin.com/in/andrei-cristea-113254262)  
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-blue?logo=linkedin)](https://www.linkedin.com/in/andrei-cristea-113254262)  
 📧 **Email:** andreicristea2005@outlook.com  
 
 ---
