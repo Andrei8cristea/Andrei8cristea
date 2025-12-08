@@ -1,125 +1,651 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" itemscope itemtype="https://schema.org/Person">
 <head>
   <meta charset="UTF-8" />
   <title>CV — Andrei Cristea</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Andrei Cristea - Computer Science Student, Backend Developer, and Teaching Assistant. University of Bucharest." />
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="CV — Andrei Cristea" />
+  <meta property="og:description" content="Computer Science Student, Backend Developer, and Teaching Assistant at University of Bucharest" />
+  
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="CV — Andrei Cristea" />
+  <meta name="twitter:description" content="Computer Science Student, Backend Developer, and Teaching Assistant" />
+  
+  <!-- Theme Color -->
+  <meta name="theme-color" content="#2563eb" media="(prefers-color-scheme: light)" />
+  <meta name="theme-color" content="#60a5fa" media="(prefers-color-scheme: dark)" />
+  
+  <!-- Performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
+    /* Light mode (default) */
     :root {
-      --bg: #f7f7f8;
-      --fg: #1f2937;
-      --muted: #6b7280;
-      --accent: #0ea5e9;
+      --bg: #fafbfc;
+      --fg: #0f172a;
+      --muted: #64748b;
+      --muted-light: #94a3b8;
+      --accent: #2563eb;
+      --accent-hover: #1d4ed8;
+      --accent-light: #3b82f6;
       --card: #ffffff;
-      --border: #e5e7eb;
+      --border: #e2e8f0;
+      --border-light: #f1f5f9;
+      --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+      --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.08), 0 2px 4px -1px rgba(0, 0, 0, 0.04);
+      --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+      --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
     }
-    * { box-sizing: border-box; }
-    html, body {
+
+    /* Dark mode */
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0f172a;
+        --fg: #f1f5f9;
+        --muted: #94a3b8;
+        --muted-light: #64748b;
+        --accent: #60a5fa;
+        --accent-hover: #3b82f6;
+        --accent-light: #93c5fd;
+        --card: #1e293b;
+        --border: #334155;
+        --border-light: #1e293b;
+        --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.3);
+        --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.4), 0 2px 4px -1px rgba(0, 0, 0, 0.3);
+        --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.5), 0 4px 6px -2px rgba(0, 0, 0, 0.3);
+        --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.6), 0 10px 10px -5px rgba(0, 0, 0, 0.4);
+      }
+    }
+
+    * { 
+      box-sizing: border-box;
       margin: 0;
       padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    html, body {
       background: var(--bg);
       color: var(--fg);
-      font: 16px/1.6 "Inter", system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+      font-family: "Inter", system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+      font-size: 15px;
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      transition: background-color 0.3s ease, color 0.3s ease;
+      min-height: 100vh;
     }
+
+    body {
+      background-image: 
+        radial-gradient(circle at 20% 50%, rgba(37, 99, 235, 0.03) 0%, transparent 50%),
+        radial-gradient(circle at 80% 80%, rgba(59, 130, 246, 0.03) 0%, transparent 50%);
+      background-attachment: fixed;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      body {
+        background-image: 
+          radial-gradient(circle at 20% 50%, rgba(96, 165, 250, 0.05) 0%, transparent 50%),
+          radial-gradient(circle at 80% 80%, rgba(147, 197, 253, 0.05) 0%, transparent 50%);
+      }
+    }
+
     .wrap {
-      max-width: 860px;
-      margin: 48px auto;
-      padding: 0 24px;
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 48px 24px;
+      animation: fadeIn 0.6s ease-out;
+      position: relative;
     }
+
+    .wrap::before {
+      content: '';
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      pointer-events: none;
+      background: 
+        radial-gradient(circle at 0% 0%, rgba(37, 99, 235, 0.02) 0%, transparent 50%),
+        radial-gradient(circle at 100% 100%, rgba(59, 130, 246, 0.02) 0%, transparent 50%);
+      z-index: -1;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      .wrap::before {
+        background: 
+          radial-gradient(circle at 0% 0%, rgba(96, 165, 250, 0.03) 0%, transparent 50%),
+          radial-gradient(circle at 100% 100%, rgba(147, 197, 253, 0.03) 0%, transparent 50%);
+      }
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(10px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
     .header {
       background: var(--card);
       border: 1px solid var(--border);
-      border-radius: 12px;
-      padding: 24px;
-      box-shadow: 0 2px 10px rgba(17, 24, 39, 0.06);
+      border-radius: 20px;
+      padding: 40px;
+      box-shadow: var(--shadow-md);
+      margin-bottom: 28px;
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      position: relative;
+      overflow: hidden;
     }
-    .cv-tag {
-      display: inline-block;
-      font-weight: 600;
-      font-size: 12px;
-      letter-spacing: 0.08em;
-      color: var(--accent);
-      background: rgba(14,165,233,0.1);
-      border: 1px solid rgba(14,165,233,0.25);
-      padding: 6px 10px;
-      border-radius: 999px;
-      margin-bottom: 12px;
+
+    .header::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: linear-gradient(90deg, var(--accent) 0%, var(--accent-light) 100%);
+      opacity: 0;
+      transition: opacity 0.3s ease;
     }
+
+    .header:hover {
+      box-shadow: var(--shadow-lg);
+      transform: translateY(-2px);
+    }
+
+    .header:hover::before {
+      opacity: 1;
+    }
+
     h1 {
-      margin: 0 0 4px 0;
-      font-size: 28px;
-      line-height: 1.25;
+      margin: 0 0 10px 0;
+      font-size: 36px;
+      font-weight: 700;
+      line-height: 1.15;
+      color: var(--fg);
+      letter-spacing: -0.03em;
+      background: linear-gradient(135deg, var(--fg) 0%, var(--muted) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
     }
+
+    @media (prefers-color-scheme: dark) {
+      h1 {
+        background: linear-gradient(135deg, var(--fg) 0%, var(--accent-light) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+    }
+
     .subtitle {
       margin: 0;
       color: var(--muted);
       font-weight: 500;
+      font-size: 17px;
+      line-height: 1.5;
+      letter-spacing: -0.01em;
     }
+
     .grid {
       display: grid;
       grid-template-columns: 1.1fr 0.9fr;
-      gap: 16px;
-      margin-top: 18px;
+      gap: 24px;
+      margin-top: 28px;
     }
+
     .card {
       background: var(--card);
       border: 1px solid var(--border);
-      border-radius: 12px;
-      padding: 20px;
-      box-shadow: 0 2px 10px rgba(17, 24, 39, 0.06);
+      border-radius: 14px;
+      padding: 28px;
+      box-shadow: var(--shadow-sm);
+      transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+      position: relative;
     }
+
+    .card:hover {
+      box-shadow: var(--shadow-md);
+      border-color: var(--accent);
+      transform: translateY(-2px);
+    }
+
     h2 {
-      margin: 0 0 12px 0;
-      font-size: 16px;
-      letter-spacing: 0.02em;
+      margin: 0 0 18px 0;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.12em;
       text-transform: uppercase;
-      color: var(--muted);
+      color: var(--accent);
+      border-bottom: 2px solid var(--border);
+      padding-bottom: 10px;
+      position: relative;
+      transition: all 0.3s ease;
     }
+
+    h2::after {
+      content: '';
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      width: 40px;
+      height: 2px;
+      background: linear-gradient(90deg, var(--accent) 0%, var(--accent-light) 100%);
+      transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      border-radius: 2px;
+    }
+
+    .card:hover h2::after {
+      width: 100%;
+    }
+
     ul {
       margin: 0;
-      padding-left: 18px;
+      padding-left: 0;
+      list-style: none;
     }
-    li { margin: 6px 0; }
+
+    li { 
+      margin: 12px 0;
+      padding-left: 24px;
+      position: relative;
+      line-height: 1.75;
+      transition: all 0.2s ease;
+    }
+
+    li:hover {
+      padding-left: 28px;
+    }
+
+    li::before {
+      content: "▸";
+      position: absolute;
+      left: 0;
+      color: var(--accent);
+      font-weight: 600;
+      font-size: 14px;
+      transition: all 0.2s ease;
+      opacity: 0.7;
+    }
+
+    li:hover::before {
+      opacity: 1;
+      color: var(--accent-light);
+      transform: scale(1.2);
+    }
+
     .contact a {
       color: var(--fg);
       text-decoration: none;
-      border-bottom: 1px solid rgba(31,41,55,0.2);
+      border-bottom: 1.5px solid transparent;
+      transition: all 0.2s ease;
+      font-weight: 500;
+      display: inline-block;
     }
-    .contact a:hover { border-bottom-color: var(--accent); }
+
+    .contact a:hover { 
+      color: var(--accent);
+      border-bottom-color: var(--accent);
+    }
+
+    .contact a:focus {
+      outline: 2px solid var(--accent);
+      outline-offset: 2px;
+      border-radius: 3px;
+    }
+
     .section {
-      margin-top: 20px;
+      margin-top: 28px;
+      animation: slideUp 0.5s ease-out backwards;
     }
-    .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+
+    .section:nth-child(1) { animation-delay: 0.1s; }
+    .section:nth-child(2) { animation-delay: 0.15s; }
+    .section:nth-child(3) { animation-delay: 0.2s; }
+    .section:nth-child(4) { animation-delay: 0.25s; }
+    .section:nth-child(5) { animation-delay: 0.3s; }
+    .section:nth-child(6) { animation-delay: 0.35s; }
+    .section:nth-child(7) { animation-delay: 0.4s; }
+
+    @media (prefers-reduced-motion: reduce) {
+      *,
+      *::before,
+      *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+      }
+      
+      .wrap {
+        animation: none;
+      }
+      
+      .section {
+        animation: none;
+      }
+    }
+
+    @keyframes slideUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .section p {
+      margin: 0;
+      line-height: 1.75;
+      color: var(--muted);
+    }
+
+    .profile-text {
+      text-align: justify;
+      hyphens: auto;
+    }
+
+    .skills-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 4px;
+    }
+
+    .skill-tag {
+      display: inline-block;
+      padding: 4px 12px;
+      background: var(--border-light);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      font-size: 13px;
+      color: var(--muted);
+      transition: all 0.2s ease;
+      font-weight: 500;
+    }
+
+    .skill-tag:hover {
+      background: var(--accent);
+      color: white;
+      border-color: var(--accent);
+      transform: translateY(-2px) scale(1.05);
+      box-shadow: 0 4px 8px rgba(37, 99, 235, 0.2);
+    }
+
+    @media (prefers-color-scheme: dark) {
+      .skill-tag:hover {
+        box-shadow: 0 4px 8px rgba(96, 165, 250, 0.3);
+      }
+    }
+
+    .skill-category {
+      margin-bottom: 16px;
+    }
+
+    .skill-category:last-child {
+      margin-bottom: 0;
+    }
+
+    .skill-category strong {
+      display: block;
+      margin-bottom: 8px;
+      font-size: 14px;
+    }
+
+    .experience-item, .achievement-item, .project-item {
+      margin-bottom: 22px;
+      padding-bottom: 22px;
+      border-bottom: 1px solid var(--border-light);
+      transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+      border-left: 3px solid transparent;
+      padding-left: 24px;
+      margin-left: 0;
+    }
+
+    .experience-item:hover, .achievement-item:hover, .project-item:hover {
+      border-left: 3px solid var(--accent);
+      padding-left: 21px;
+      margin-left: -3px;
+    }
+
+    .experience-item:last-child, .achievement-item:last-child, .project-item:last-child {
+      margin-bottom: 0;
+      padding-bottom: 0;
+      border-bottom: none;
+    }
+
+    strong {
+      font-weight: 600;
+      color: var(--fg);
+      letter-spacing: -0.01em;
+    }
+
+    .date {
+      color: var(--muted);
+      font-weight: 500;
+      font-size: 14px;
+      letter-spacing: 0.01em;
+    }
+
+    .separator {
+      opacity: 0.4;
+      margin: 0 8px;
+      font-weight: 400;
+      color: var(--muted);
+    }
+
+    .date {
+      white-space: nowrap;
+    }
+
+    .highlight {
+      color: var(--accent);
+      font-weight: 600;
+      position: relative;
+    }
+
+    .highlight::after {
+      content: '';
+      position: absolute;
+      bottom: 2px;
+      left: 0;
+      right: 0;
+      height: 2px;
+      background: var(--accent);
+      opacity: 0.2;
+      transition: opacity 0.2s ease;
+    }
+
+    .highlight:hover::after {
+      opacity: 0.4;
+    }
+
+    .contact li {
+      margin-bottom: 12px;
+      padding-left: 0;
+    }
+
+    .contact li::before {
+      display: none;
+    }
+
+    .contact li:last-child {
+      margin-bottom: 0;
+    }
+
+    .contact strong {
+      display: inline-block;
+      min-width: 70px;
+      margin-right: 8px;
+    }
+
+    .mono { 
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; 
+    }
+
+    /* Smooth transitions for theme changes */
+    * {
+      transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+    }
+
+    /* Remove transitions for performance-critical elements */
+    li::before, .skill-tag, a {
+      transition: all 0.2s ease;
+    }
+
+    /* Focus visible for keyboard navigation */
+    *:focus-visible {
+      outline: 2px solid var(--accent);
+      outline-offset: 2px;
+      border-radius: 3px;
+    }
+
+    /* Selection styling */
+    ::selection {
+      background: var(--accent);
+      color: white;
+    }
+
+    ::-moz-selection {
+      background: var(--accent);
+      color: white;
+    }
+
     @media (max-width: 820px) {
-      .grid { grid-template-columns: 1fr; }
+      .grid { 
+        grid-template-columns: 1fr; 
+        gap: 20px;
+      }
+      .wrap {
+        padding: 32px 20px;
+      }
+      .header {
+        padding: 28px 24px;
+        border-radius: 16px;
+      }
+      h1 {
+        font-size: 30px;
+      }
+      .subtitle {
+        font-size: 16px;
+      }
+      .card {
+        padding: 24px;
+      }
+      .skills-list {
+        gap: 6px;
+      }
+      .skill-tag {
+        font-size: 12px;
+        padding: 3px 10px;
+      }
     }
+
     @media print {
-      body { background: white; }
-      .wrap { margin: 0; max-width: 100%; padding: 0; }
-      .header, .card { box-shadow: none; border-color: #ddd; }
-      .cv-tag { border-color: #aaa; }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --bg: #ffffff;
+          --fg: #000000;
+          --muted: #666666;
+          --card: #ffffff;
+          --border: #dddddd;
+        }
+      }
+      body { 
+        background: white; 
+        font-size: 12px;
+      }
+      .wrap { 
+        margin: 0; 
+        max-width: 100%; 
+        padding: 0; 
+      }
+      .header, .card { 
+        box-shadow: none; 
+        border-color: #ddd;
+        page-break-inside: avoid;
+        border-radius: 0;
+      }
+      .section {
+        page-break-inside: avoid;
+      }
+      a {
+        color: var(--fg);
+        text-decoration: none;
+      }
+      h1 {
+        -webkit-text-fill-color: initial;
+        background: none;
+        color: #000;
+      }
+      .card:hover {
+        transform: none;
+      }
+      .skill-tag:hover {
+        transform: none;
+      }
+      body {
+        background-image: none;
+      }
+      .wrap::before {
+        display: none;
+      }
+      .section {
+        animation: none;
+      }
+      .experience-item:hover, .achievement-item:hover, .project-item:hover {
+        border-left: none;
+        padding-left: 24px;
+        margin-left: 0;
+      }
+      li:hover {
+        padding-left: 24px;
+      }
+      li::before {
+        opacity: 0.7;
+      }
     }
   </style>
 </head>
 <body>
   <main class="wrap">
-    <section class="header">
-      <span class="cv-tag">CV</span>
-      <h1>Andrei Cristea</h1>
+    <section class="header" itemscope itemtype="https://schema.org/Person">
+      <h1 itemprop="name">Andrei Cristea</h1>
       <p class="subtitle">Computer Science Student | Backend Developer | Teaching Assistant</p>
       <div class="grid">
         <div class="card contact">
           <h2>Contact</h2>
           <ul>
-            <li><strong>Email:</strong> <a href="mailto:andreicristea2005@outlook.com">andreicristea2005@outlook.com</a></li>
-            <li><strong>Phone:</strong> <a href="tel:+40757574545">+40 757 574 545</a></li>
-            <li><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/andrei1cristea" target="_blank" rel="noopener">linkedin.com/in/andrei1cristea</a></li>
-            <li><strong>GitHub:</strong> <a href="https://github.com/Andrei8cristea" target="_blank" rel="noopener">github.com/Andrei8cristea</a></li>
+            <li><strong>Email:</strong> <a href="mailto:andreicristea2005@outlook.com" itemprop="email">andreicristea2005@outlook.com</a></li>
+            <li><strong>Phone:</strong> <a href="tel:+40757574545" itemprop="telephone">+40 757 574 545</a></li>
+            <li><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/andrei1cristea" target="_blank" rel="noopener nofollow" itemprop="sameAs">linkedin.com/in/andrei1cristea</a></li>
+            <li><strong>GitHub:</strong> <a href="https://github.com/Andrei8cristea" target="_blank" rel="noopener nofollow" itemprop="sameAs">github.com/Andrei8cristea</a></li>
           </ul>
         </div>
         <div class="card">
           <h2>Profile</h2>
-          <p>Second-year Computer Science student at the University of Bucharest (GPA: 8.61/10), with strong academic performance, international exchange experience, and demonstrated leadership. Passionate about software development, data systems, and building technology for social impact.</p>
+          <p class="profile-text">Second-year Computer Science student at the <span class="highlight">University of Bucharest</span> (GPA: <strong>8.61/10</strong>), with strong academic performance, international exchange experience, and demonstrated leadership. Passionate about software development, data systems, and building technology for social impact.</p>
         </div>
       </div>
     </section>
@@ -127,61 +653,143 @@
     <section class="section card">
       <h2>Education</h2>
       <ul>
-        <li>BSc Computer Science, University of Bucharest — GPA: 8.61/10 (2024–2027 expected)</li>
-        <li>High School Diploma, Spiru Haret, Bucharest — Baccalaureate: 9.76/10 (2024)</li>
+        <li class="experience-item">
+          <strong>BSc Computer Science</strong><br />
+          <span class="date">University of Bucharest</span><span class="separator">•</span><span class="date">2024–2027 (Expected)</span><br />
+          GPA: <strong>8.61/10</strong>
+        </li>
+        <li class="experience-item">
+          <strong>High School Diploma</strong><br />
+          <span class="date">Spiru Haret, Bucharest</span><span class="separator">•</span><span class="date">2024</span><br />
+          Baccalaureate: <strong>9.76/10</strong>
+        </li>
       </ul>
     </section>
 
     <section class="section card">
       <h2>Technical Skills</h2>
-      <ul>
-        <li>Programming: C/C++, Python, JavaScript/TypeScript, HTML/CSS, Assembly (x86), SQL, Bash</li>
-        <li>Tools &amp; Frameworks: Git, Docker, Node.js, Angular, Firebase, MongoDB, Linux</li>
-        <li>Testing &amp; DevOps: Postman, CI/CD, Debugging, basic deployment pipelines</li>
-        <li>Fundamentals: Data Structures, Algorithms, OOP, REST APIs, Systems Programming</li>
-      </ul>
+      <div class="skill-category">
+        <strong>Programming Languages</strong>
+        <div class="skills-list">
+          <span class="skill-tag">C/C++</span>
+          <span class="skill-tag">Python</span>
+          <span class="skill-tag">JavaScript</span>
+          <span class="skill-tag">TypeScript</span>
+          <span class="skill-tag">HTML/CSS</span>
+          <span class="skill-tag">Assembly (x86)</span>
+          <span class="skill-tag">SQL</span>
+          <span class="skill-tag">Bash</span>
+        </div>
+      </div>
+      <div class="skill-category">
+        <strong>Tools &amp; Frameworks</strong>
+        <div class="skills-list">
+          <span class="skill-tag">Git</span>
+          <span class="skill-tag">Docker</span>
+          <span class="skill-tag">Node.js</span>
+          <span class="skill-tag">Angular</span>
+          <span class="skill-tag">Firebase</span>
+          <span class="skill-tag">MongoDB</span>
+          <span class="skill-tag">Linux</span>
+        </div>
+      </div>
+      <div class="skill-category">
+        <strong>Testing &amp; DevOps</strong>
+        <div class="skills-list">
+          <span class="skill-tag">Postman</span>
+          <span class="skill-tag">CI/CD</span>
+          <span class="skill-tag">Debugging</span>
+          <span class="skill-tag">Deployment</span>
+        </div>
+      </div>
+      <div class="skill-category">
+        <strong>Fundamentals</strong>
+        <div class="skills-list">
+          <span class="skill-tag">Data Structures</span>
+          <span class="skill-tag">Algorithms</span>
+          <span class="skill-tag">OOP</span>
+          <span class="skill-tag">REST APIs</span>
+          <span class="skill-tag">Systems Programming</span>
+        </div>
+      </div>
     </section>
 
     <section class="section card">
       <h2>Experience</h2>
       <ul>
-        <li><strong>Teaching Assistant, University of Bucharest (Oct 2025–Present)</strong><br />
-          Supported 30+ first-year students in Computer Organization and Design (assembly language).</li>
-        <li><strong>QA Tester Intern, Code of Talent (Sep–Dec 2025)</strong><br />
-          Tested product features and documented 40+ issues; collaborated with developers to improve release quality.</li>
-        <li><strong>Backend Developer Volunteer, Scout Society NGO (Oct 2025–Present)</strong><br />
-          Engineered scalable backend for youth volunteering platform using Next.js and SupaBase.</li>
-        <li><strong>Lenovo Summer School (Jun–Aug 2025)</strong><br />
-          Explored DevOps, frontend/backend development, and cybersecurity in enterprise-level workshops.</li>
-        <li><strong>Lenovo Frontend Workshop (Mar–May 2025)</strong><br />
-          Developed web apps using Node.js and Angular; practiced modular design and deployment.</li>
+        <li class="experience-item">
+          <strong>Teaching Assistant</strong><span class="separator">•</span><span class="date">University of Bucharest</span><br />
+          <span class="date">October 2025 – Present</span><br />
+          Supported 30+ first-year students in Computer Organization and Design (assembly language).
+        </li>
+        <li class="experience-item">
+          <strong>QA Tester Intern</strong><span class="separator">•</span><span class="date">Code of Talent</span><br />
+          <span class="date">September – December 2025</span><br />
+          Tested product features and documented 40+ issues; collaborated with developers to improve release quality.
+        </li>
+        <li class="experience-item">
+          <strong>Backend Developer Volunteer</strong><span class="separator">•</span><span class="date">Scout Society NGO</span><br />
+          <span class="date">October 2025 – Present</span><br />
+          Engineered scalable backend for youth volunteering platform using Next.js and SupaBase.
+        </li>
+        <li class="experience-item">
+          <strong>Lenovo Summer School</strong><br />
+          <span class="date">June – August 2025</span><br />
+          Explored DevOps, frontend/backend development, and cybersecurity in enterprise-level workshops.
+        </li>
+        <li class="experience-item">
+          <strong>Lenovo Frontend Workshop</strong><br />
+          <span class="date">March – May 2025</span><br />
+          Developed web apps using Node.js and Angular; practiced modular design and deployment.
+        </li>
       </ul>
     </section>
 
     <section class="section card">
       <h2>Achievements &amp; Leadership</h2>
       <ul>
-        <li>Winner, Vibehack Hackathon 2025 — Led technical development in a 4-person team; built a mobile app prototype improving access to youth volunteering opportunities.</li>
-        <li>Captain, Romanian National Basketball Team (High School, 2023) — Coordinated team strategy, fostered collaboration, and represented Romania internationally.</li>
-        <li>Participant, Waves of Change Youth Exchange Program (2025) — Engaged with European peers in Azores, Portugal on sustainability, youth empowerment, and intercultural dialogue.</li>
+        <li class="achievement-item">
+          <strong>Winner, Vibehack Hackathon 2025</strong><br />
+          Led technical development in a 4-person team; built a mobile app prototype improving access to youth volunteering opportunities.
+        </li>
+        <li class="achievement-item">
+          <strong>Captain, Romanian National Basketball Team</strong><span class="separator">•</span><span class="date">High School, 2023</span><br />
+          Coordinated team strategy, fostered collaboration, and represented Romania internationally.
+        </li>
+        <li class="achievement-item">
+          <strong>Participant, Waves of Change Youth Exchange Program</strong><span class="separator">•</span><span class="date">2025</span><br />
+          Engaged with European peers in Azores, Portugal on sustainability, youth empowerment, and intercultural dialogue.
+        </li>
       </ul>
     </section>
 
     <section class="section card">
       <h2>Projects</h2>
       <ul>
-        <li>QR Reader/Generator — Built a QR code tool from scratch without external libraries.</li>
-        <li>2048 + Database — Recreated the 2048 game with backend integration to store top scores.</li>
-        <li>x86 File System Manager — Simulated file operations in memory: add, delete, defragment, analyze directory sizes.</li>
-        <li>Airways SQL Database — Designed and queried a relational database for airline operations.</li>
+        <li class="project-item">
+          <strong>QR Reader/Generator</strong><br />
+          Built a QR code tool from scratch without external libraries.
+        </li>
+        <li class="project-item">
+          <strong>2048 + Database</strong><br />
+          Recreated the 2048 game with backend integration to store top scores.
+        </li>
+        <li class="project-item">
+          <strong>x86 File System Manager</strong><br />
+          Simulated file operations in memory: add, delete, defragment, analyze directory sizes.
+        </li>
+        <li class="project-item">
+          <strong>Airways SQL Database</strong><br />
+          Designed and queried a relational database for airline operations.
+        </li>
       </ul>
     </section>
 
     <section class="section card">
       <h2>Languages</h2>
       <ul>
-        <li>Romanian (Native)</li>
-        <li>English (Fluent)</li>
+        <li><strong>Romanian:</strong> Native</li>
+        <li><strong>English:</strong> Fluent</li>
       </ul>
     </section>
   </main>
