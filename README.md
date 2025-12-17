@@ -1,16 +1,20 @@
 # [![Typing SVG](https://readme-typing-svg.herokuapp.com?size=24&color=00F7FF&center=true&vCenter=true&width=700&lines=Hi%2C+I'm+Andrei+Cristea;)](https://git.io/typing-svg)
 
-<!--
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Andrei8cristea&layout=compact&theme=tokyonight&hide_border=true" alt="Top Languages" height="140" />
-  <img src="https://github-readme-stats.vercel.app/api?username=Andrei8cristea&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true" alt="GitHub Stats" height="140" />
+  <img
+    src="https://github-readme-stats.vercel.app/api/top-langs/?username=Andrei8cristea&layout=compact&theme=tokyonight&hide_border=true&card_width=420"
+    alt="Top Languages"
+    style="width:420px;height:140px;object-fit:cover;"
+  />
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=Andrei8cristea&show_icons=true&theme=tokyonight" alt="GitHub Stats" />
 </p>
 
-<p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Andrei8cristea&theme=tokyonight&hide_border=true" alt="GitHub Streak" height="40" />
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=Andrei8cristea&repo=andrei-cristea-cv&theme=tokyonight&hide_border=true" alt="Pinned Repo" height="40" />
 </p>
--->
+
+
+
+
 **Live CV:** https://andrei8cristea.github.io/andrei-cristea-cv/
 
 ---
