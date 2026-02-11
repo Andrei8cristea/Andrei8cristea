@@ -3,12 +3,18 @@
 [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=22&duration=3000&pause=1000&color=00F7FF&center=true&vCenter=true&width=800&lines=Computer+Science+Student+%7C+Backend+Developer;Teaching+Assistant+%40+University+of+Bucharest;Building+Technology+for+Social+Impact)](https://git.io/typing-svg)
 
 <p align="center">
-  <a href="https://andrei8cristea.github.io/andrei-cristea-cv/">
+  <a href="https://andrei8cristea.github.io/Andrei8cristea/">
     <img src="https://img.shields.io/badge/🌐_Live_CV-Visit_Website-00F7FF?style=for-the-badge" alt="Live CV" />
   </a>
+</p>
+
+<p align="center">
   <a href="https://linkedin.com/in/andrei1cristea">
     <img src="https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin" alt="LinkedIn" />
   </a>
+</p>
+
+<p align="center">
   <a href="mailto:andreicristea2005@outlook.com">
     <img src="https://img.shields.io/badge/Email-Contact-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
   </a>
@@ -59,8 +65,11 @@ I'm a **second-year Computer Science student** at the **University of Bucharest*
 ## 📊 GitHub Stats
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Andrei8cristea&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" alt="GitHub Stats" height="165" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Andrei8cristea&layout=compact&theme=tokyonight&hide_border=true&card_width=320" alt="Top Languages" height="165" />
+  <img src="https://github-readme-stats.vercel.app/api?username=Andrei8cristea&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&include_all_commits=true" alt="GitHub Stats" />
+</p>
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Andrei8cristea&layout=compact&theme=tokyonight&hide_border=true&langs_count=8" alt="Top Languages" />
 </p>
 
 <p align="center">
@@ -120,15 +129,24 @@ Designed and implemented a relational database for airline operations with compl
 ## 📫 Get in Touch
 
 <p align="center">
-  <a href="https://andrei8cristea.github.io/andrei-cristea-cv/">
+  <a href="https://andrei8cristea.github.io/Andrei8cristea/">
     <img src="https://img.shields.io/badge/Portfolio-Visit_My_CV-00F7FF?style=for-the-badge&logo=google-chrome&logoColor=white" alt="Portfolio" />
   </a>
+</p>
+
+<p align="center">
   <a href="https://linkedin.com/in/andrei1cristea">
     <img src="https://img.shields.io/badge/LinkedIn-andrei1cristea-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
   </a>
+</p>
+
+<p align="center">
   <a href="mailto:andreicristea2005@outlook.com">
     <img src="https://img.shields.io/badge/Email-andreicristea2005-D14836?style=for-the-badge&logo=microsoft-outlook&logoColor=white" alt="Email" />
   </a>
+</p>
+
+<p align="center">
   <a href="tel:+40757574545">
     <img src="https://img.shields.io/badge/Phone-%2B40_757_574_545-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" alt="Phone" />
   </a>
