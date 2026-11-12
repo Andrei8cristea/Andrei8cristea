@@ -1,6 +1,6 @@
 # Hi, I'm Andrei Cristea 👋
 
-[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=22&duration=3000&pause=1000&color=00F7FF&center=true&vCenter=true&width=800&lines=Computer+Science+Student+%7C+Backend+Developer;Teaching+Assistant+%40+University+of+Bucharest;Building+Technology+for+Social+Impact)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=22&duration=3000&pause=1000&color=00F7FF&center=true&vCenter=true&width=800&lines=Data+Management+Consultant+%40+SAP+SE;Computer+Science+Student+%7C+University+of+Bucharest;Teaching+Assistant+%7C+Backend+Developer)](https://git.io/typing-svg)
 
 <p align="center">
   <a href="https://andrei8cristea.github.io/Andrei8cristea/">
@@ -12,11 +12,9 @@
   <a href="https://linkedin.com/in/andrei1cristea">
     <img src="https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin" alt="LinkedIn" />
   </a>
-</p>
-
-<p align="center">
+  &nbsp;
   <a href="mailto:andreicristea2005@outlook.com">
-    <img src="https://img.shields.io/badge/Email-Contact-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
+    <img src="https://img.shields.io/badge/Email-Contact-D14836?style=for-the-badge&logo=microsoft-outlook&logoColor=white" alt="Email" />
   </a>
 </p>
 
@@ -24,13 +22,15 @@
 
 ## 👨‍💻 About Me
 
-I'm a **second-year Computer Science student** at the **University of Bucharest** (GPA: **8.61/10**), passionate about building scalable backend systems and technology that creates social impact. Currently serving as a **Teaching Assistant** and actively contributing to open-source and NGO projects.
+I'm a **Computer Science student** at the **University of Bucharest** (GPA: **8.61/10**) and a **Data Management Consultant Intern at SAP SE**, working on enterprise data migration and production AI systems. I've shipped features to real users, led teams in international settings, and I'm certified as an **SAP Generative AI Developer**.
 
-- 🔭 Currently working on a **youth volunteering platform** with Next.js & SupaBase
-- 🌱 Learning advanced **systems programming** and **DevOps practices**
-- 🏆 **Winner** of Vibehack Hackathon 2025
-- 🏀 Former **Captain** of Romanian National Basketball Team
-- 🌍 International exchange participant (Waves of Change, Portugal 2025)
+- 🏢 Currently interning as a **Data Management Consultant** at **SAP SE**
+- 🤖 Contributed to a production enterprise RAG assistant (FAIA) on SAP BTP
+- 🥇 **1st Place** — NXP Line Follower Robotics Competition 2026
+- 🏆 **Winner** — Vibehack Hackathon 2025
+- 🌍 Participated in and led **4 Erasmus+ Youth Exchanges** across Europe
+- 🎓 Former **Teaching Assistant** — Computer Organization and Design, UB
+- 🏀 Former **Captain** — Romanian National Basketball Team
 
 ---
 
@@ -42,23 +42,23 @@ I'm a **second-year Computer Science student** at the **University of Bucharest*
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
 ![SQL](https://img.shields.io/badge/SQL-336791?style=for-the-badge&logo=postgresql&logoColor=white)
-![Bash](https://img.shields.io/badge/Bash-4EAA25?style=for-the-badge&logo=gnubash&logoColor=white)
 ![Assembly](https://img.shields.io/badge/Assembly_x86-525252?style=for-the-badge&logoColor=white)
 
 ### Frameworks & Tools
 ![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
 ![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
 ![Angular](https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white)
-![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black)
-![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
-![SupaBase](https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white)
-
-### DevOps & Testing
-![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
+![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)
+![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
-![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
+![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
 ![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white)
-![CI/CD](https://img.shields.io/badge/CI%2FCD-2088FF?style=for-the-badge&logo=githubactions&logoColor=white)
+
+### SAP Technologies
+![SAP BTP](https://img.shields.io/badge/SAP_BTP-0FAAFF?style=for-the-badge&logo=sap&logoColor=white)
+![SAP CAP](https://img.shields.io/badge/SAP_CAP-0FAAFF?style=for-the-badge&logo=sap&logoColor=white)
+![SAP HANA](https://img.shields.io/badge/SAP_HANA-0FAAFF?style=for-the-badge&logo=sap&logoColor=white)
+![SAP AI Core](https://img.shields.io/badge/SAP_AI_Core-0FAAFF?style=for-the-badge&logo=sap&logoColor=white)
 
 ---
 
@@ -78,51 +78,53 @@ I'm a **second-year Computer Science student** at the **University of Bucharest*
 
 ---
 
-## 💼 Experience Highlights
+## 💼 Experience
+
+### 🏢 Data Management Consultant Intern
+**SAP SE** | *Apr 2025 – Present*
+- Client-facing data migration for Merck Group and Teva across SAP environments (TCC, DCC, QCC)
+- Shipped full-stack features for FAIA, a production RAG AI assistant on SAP BTP
+- Built and presented an AI CV Reviewer to an external SAP stakeholder
+- Certified: SAP Generative AI Developer, HANA Data Engineer, SAPTEC (92%)
 
 ### 🎓 Teaching Assistant
-**University of Bucharest** | *Oct 2025 – Present*
-- Supporting 30+ first-year students in Computer Organization and Design (assembly language)
-- Mentoring students in low-level programming and systems architecture
+**University of Bucharest** | *Oct 2025 – Feb 2026*
+- Guided 30+ first-year students through x86 assembly, memory management, and systems architecture
 
 ### 🧪 QA Tester Intern
 **Code of Talent** | *Sep – Dec 2025*
-- Documented 40+ issues and collaborated with developers to improve release quality
-- Contributed to product testing and quality assurance processes
+- Identified and documented 40+ defects; automated test workflows using Java and Selenium
 
 ### 💻 Backend Developer Volunteer
 **Scout Society NGO** | *Oct 2025 – Present*
-- Engineering scalable backend for youth volunteering platform
-- Tech stack: Next.js, SupaBase, TypeScript
+- Engineering scalable APIs for a youth volunteering platform (Next.js, Supabase)
 
 ---
 
-## 🚀 Featured Projects
+## 🚀 Projects
 
-### 🏆 Vibehack Hackathon Winner (2025)
-Led technical development of a mobile app prototype improving access to youth volunteering opportunities. Built in 24 hours with a 4-person team.
+### 🤖 FAIA — SAP Internal AI Assistant
+Production RAG assistant on SAP BTP with active end users. Independently delivered the Tags Module, BTP routing overhaul, and conversation management. Stack: Node.js, SAP CAP, CDS.
+
+### 📄 AI CV Reviewer
+LLM-based CV review tool built independently and presented to an external SAP stakeholder.
 
 ### 📱 QR Reader/Generator
-Built a complete QR code tool from scratch **without external libraries**, implementing the full encoding/decoding algorithm.
-
-### 🎮 2048 + Database Integration
-Recreated the popular 2048 game with backend integration to persist and display top scores across sessions.
+Full QR encoder and decoder implemented from scratch without any external libraries.
 
 ### 💾 x86 File System Manager
-Simulated file operations in assembly language: add, delete, defragment, and analyze directory sizes in memory.
-
-### ✈️ Airways SQL Database
-Designed and implemented a relational database for airline operations with complex queries and optimizations.
+Complete file system with real operations (add, delete, defragment, directory analysis) in x86 assembly.
 
 ---
 
 ## 🎯 Achievements
 
-- 🥇 **Winner** - Vibehack Hackathon 2025
-- 🏀 **Captain** - Romanian National Basketball Team (2023)
-- 🌊 **Participant** - Waves of Change Youth Exchange Program, Portugal (2025)
-- 📚 **GPA: 8.61/10** - University of Bucharest
-- 🎓 **Baccalaureate: 9.76/10** - Spiru Haret High School
+- 🥇 **1st Place** — NXP Line Follower Robotics Competition 2026
+- 🏆 **Winner** — Vibehack Hackathon 2025
+- 🌍 **Erasmus+ Youth Exchange** — 4 exchanges: Portugal, Greece, Spain, Italy (2025–2026)
+- 🏀 **Captain** — Romanian National Basketball Team (2023)
+- 📚 **GPA: 8.61/10** — University of Bucharest
+- 🎓 **Baccalaureate: 9.76/10** — Colegiul Național "Spiru Haret"
 
 ---
 
@@ -138,15 +140,11 @@ Designed and implemented a relational database for airline operations with compl
   <a href="https://linkedin.com/in/andrei1cristea">
     <img src="https://img.shields.io/badge/LinkedIn-andrei1cristea-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
   </a>
-</p>
-
-<p align="center">
+  &nbsp;
   <a href="mailto:andreicristea2005@outlook.com">
     <img src="https://img.shields.io/badge/Email-andreicristea2005-D14836?style=for-the-badge&logo=microsoft-outlook&logoColor=white" alt="Email" />
   </a>
-</p>
-
-<p align="center">
+  &nbsp;
   <a href="tel:+40757574545">
     <img src="https://img.shields.io/badge/Phone-%2B40_757_574_545-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" alt="Phone" />
   </a>
@@ -156,8 +154,4 @@ Designed and implemented a relational database for airline operations with compl
 
 <p align="center">
   <img src="https://komarev.com/ghpvc/?username=Andrei8cristea&color=00F7FF&style=for-the-badge&label=Profile+Views" alt="Profile Views" />
-</p>
-
-<p align="center">
-  <i>💡 "Building technology for social impact, one commit at a time."</i>
 </p>

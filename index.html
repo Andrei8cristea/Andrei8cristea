@@ -1,22 +1,22 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en" itemscope itemtype="https://schema.org/Person">
 
 <head>
   <meta charset="UTF-8" />
-  <title>CV — Andrei Cristea</title>
+  <title>CV &mdash; Andrei Cristea</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description"
     content="Andrei Cristea - Computer Science Student, Backend Developer, and Teaching Assistant. University of Bucharest." />
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="CV — Andrei Cristea" />
+  <meta property=”og:title” content=”CV &mdash; Andrei Cristea” />
   <meta property="og:description"
     content="Computer Science Student, Backend Developer, and Teaching Assistant at University of Bucharest" />
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="CV — Andrei Cristea" />
+  <meta name=”twitter:title” content=”CV &mdash; Andrei Cristea” />
   <meta name="twitter:description" content="Computer Science Student, Backend Developer, and Teaching Assistant" />
 
   <!-- Theme Color -->
@@ -102,7 +102,6 @@
       background-image:
         radial-gradient(circle at 20% 50%, rgba(37, 99, 235, 0.03) 0%, transparent 50%),
         radial-gradient(circle at 80% 80%, rgba(59, 130, 246, 0.03) 0%, transparent 50%);
-      background-attachment: fixed;
     }
 
     @media (prefers-color-scheme: dark) {
@@ -121,28 +120,6 @@
       position: relative;
     }
 
-    .wrap::before {
-      content: '';
-      position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      pointer-events: none;
-      background:
-        radial-gradient(circle at 0% 0%, rgba(37, 99, 235, 0.02) 0%, transparent 50%),
-        radial-gradient(circle at 100% 100%, rgba(59, 130, 246, 0.02) 0%, transparent 50%);
-      z-index: -1;
-    }
-
-    @media (prefers-color-scheme: dark) {
-      .wrap::before {
-        background:
-          radial-gradient(circle at 0% 0%, rgba(96, 165, 250, 0.03) 0%, transparent 50%),
-          radial-gradient(circle at 100% 100%, rgba(147, 197, 253, 0.03) 0%, transparent 50%);
-      }
-    }
-
     @keyframes fadeIn {
       from {
         opacity: 0;
@@ -158,11 +135,11 @@
     .header {
       background: var(--card);
       border: 1px solid var(--border);
-      border-radius: 20px;
+      border-radius: 16px;
       padding: 40px;
       box-shadow: var(--shadow-lg);
       margin-bottom: 28px;
-      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      transition: box-shadow 0.25s ease;
       position: relative;
       overflow: hidden;
     }
@@ -173,19 +150,12 @@
       top: 0;
       left: 0;
       right: 0;
-      height: 4px;
+      height: 3px;
       background: linear-gradient(90deg, var(--accent) 0%, var(--accent-light) 100%);
-      opacity: 0;
-      transition: opacity 0.3s ease;
     }
 
     .header:hover {
       box-shadow: var(--shadow-xl);
-      transform: translateY(-3px);
-    }
-
-    .header:hover::before {
-      opacity: 1;
     }
 
     h1 {
@@ -229,17 +199,15 @@
     .card {
       background: var(--card);
       border: 1px solid var(--border);
-      border-radius: 14px;
+      border-radius: 12px;
       padding: 28px;
       box-shadow: var(--shadow-md);
-      transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+      transition: box-shadow 0.25s ease;
       position: relative;
     }
 
     .card:hover {
       box-shadow: var(--shadow-lg);
-      border-color: var(--accent);
-      transform: translateY(-3px);
     }
 
     h2 {
@@ -282,28 +250,21 @@
       padding-left: 24px;
       position: relative;
       line-height: 1.75;
-      transition: all 0.2s ease;
-    }
-
-    li:hover {
-      padding-left: 28px;
     }
 
     li::before {
-      content: "▸";
+      content: "\25B8";
       position: absolute;
       left: 0;
       color: var(--accent);
       font-weight: 600;
       font-size: 14px;
-      transition: all 0.2s ease;
-      opacity: 0.7;
+      opacity: 0.6;
+      transition: opacity 0.15s ease;
     }
 
     li:hover::before {
       opacity: 1;
-      color: var(--accent-light);
-      transform: scale(1.2);
     }
 
     .contact a {
@@ -398,7 +359,6 @@
     }
 
     .profile-text {
-      text-align: justify;
       hyphens: auto;
     }
 
@@ -417,7 +377,7 @@
       border-radius: 6px;
       font-size: 13px;
       color: var(--muted);
-      transition: all 0.2s ease;
+      transition: background-color 0.15s ease, color 0.15s ease, border-color 0.15s ease;
       font-weight: 500;
     }
 
@@ -425,14 +385,6 @@
       background: var(--accent);
       color: white;
       border-color: var(--accent);
-      transform: translateY(-2px) scale(1.05);
-      box-shadow: 0 4px 8px rgba(37, 99, 235, 0.2);
-    }
-
-    @media (prefers-color-scheme: dark) {
-      .skill-tag:hover {
-        box-shadow: 0 4px 8px rgba(96, 165, 250, 0.3);
-      }
     }
 
     .skill-category {
@@ -455,18 +407,16 @@
       margin-bottom: 22px;
       padding-bottom: 22px;
       border-bottom: 1px solid var(--border-light);
-      transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
       border-left: 3px solid transparent;
-      padding-left: 24px;
+      padding-left: 16px;
       margin-left: 0;
+      transition: border-color 0.15s ease;
     }
 
     .experience-item:hover,
     .achievement-item:hover,
     .project-item:hover {
-      border-left: 3px solid var(--accent);
-      padding-left: 21px;
-      margin-left: -3px;
+      border-left-color: var(--accent);
     }
 
     .experience-item:last-child,
@@ -488,6 +438,7 @@
       font-weight: 500;
       font-size: 14px;
       letter-spacing: 0.01em;
+      white-space: nowrap;
     }
 
     .separator {
@@ -497,30 +448,9 @@
       color: var(--muted);
     }
 
-    .date {
-      white-space: nowrap;
-    }
-
     .highlight {
       color: var(--accent);
       font-weight: 600;
-      position: relative;
-    }
-
-    .highlight::after {
-      content: '';
-      position: absolute;
-      bottom: 2px;
-      left: 0;
-      right: 0;
-      height: 2px;
-      background: var(--accent);
-      opacity: 0.2;
-      transition: opacity 0.2s ease;
-    }
-
-    .highlight:hover::after {
-      opacity: 0.4;
     }
 
     .contact li {
@@ -567,35 +497,18 @@
       font-size: 15px;
       letter-spacing: 0.01em;
       box-shadow: var(--shadow-md);
-      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      transition: box-shadow 0.2s ease, filter 0.2s ease;
       border: none;
       cursor: pointer;
-      position: relative;
-      overflow: hidden;
-    }
-
-    .download-btn::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: -100%;
-      width: 100%;
-      height: 100%;
-      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
-      transition: left 0.5s ease;
-    }
-
-    .download-btn:hover::before {
-      left: 100%;
     }
 
     .download-btn:hover {
-      transform: translateY(-2px) scale(1.02);
       box-shadow: var(--shadow-lg);
+      filter: brightness(1.06);
     }
 
     .download-btn:active {
-      transform: translateY(0) scale(0.98);
+      filter: brightness(0.97);
       box-shadow: var(--shadow-sm);
     }
 
@@ -607,23 +520,6 @@
     .download-icon {
       width: 18px;
       height: 18px;
-      transition: transform 0.3s ease;
-    }
-
-    .download-btn:hover .download-icon {
-      transform: translateY(2px);
-    }
-
-    /* Smooth transitions for theme changes */
-    * {
-      transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
-    }
-
-    /* Remove transitions for performance-critical elements */
-    li::before,
-    .skill-tag,
-    a {
-      transition: all 0.2s ease;
     }
 
     /* Focus visible for keyboard navigation */
@@ -776,23 +672,13 @@
       .project-item {
         margin-bottom: 18px;
         padding-bottom: 18px;
-        padding-left: 16px;
-      }
-
-      .experience-item:hover,
-      .achievement-item:hover,
-      .project-item:hover {
-        padding-left: 13px;
+        padding-left: 12px;
       }
 
       li {
         padding-left: 20px;
         margin: 10px 0;
         line-height: 1.65;
-      }
-
-      li:hover {
-        padding-left: 22px;
       }
 
       .skill-category {
@@ -935,20 +821,14 @@
         color: #000;
       }
 
-      .card:hover {
-        transform: none;
-      }
-
+      .card:hover,
       .skill-tag:hover {
-        transform: none;
+        filter: none;
+        box-shadow: none;
       }
 
       body {
         background-image: none;
-      }
-
-      .wrap::before {
-        display: none;
       }
 
       .section {
@@ -958,9 +838,7 @@
       .experience-item:hover,
       .achievement-item:hover,
       .project-item:hover {
-        border-left: none;
-        padding-left: 24px;
-        margin-left: 0;
+        border-left-color: transparent;
       }
 
       li:hover {
@@ -978,7 +856,7 @@
   <main class="wrap">
     <section class="header" itemscope itemtype="https://schema.org/Person">
       <h1 itemprop="name">Andrei Cristea</h1>
-      <p class="subtitle">Computer Science Student | Backend Developer | Teaching Assistant</p>
+      <p class="subtitle"> SAP Data Management Consultant | Software Developer | Computer Science Student</p>
       <div class="grid">
         <div class="card contact">
           <h2>Contact</h2>
@@ -994,14 +872,14 @@
         </div>
         <div class="card">
           <h2>Profile</h2>
-          <p class="profile-text">Second-year Computer Science student at the <span class="highlight">University of
-              Bucharest</span> (GPA: <strong>8.61/10</strong>), with strong academic performance, international exchange
-            experience, and demonstrated leadership. Passionate about software development, data systems, and building
-            technology for social impact.</p>
+          <p class="profile-text">Data Management Consultant Intern at SAP SE.
+            Hands-on experience in enterprise AI delivery, client-facing data migration, and SAP BTP development.
+            Certified <strong>SAP Generative AI Developer (100%)</strong> with demonstrated leadership and a track
+            record of independent technical initiative.</p>
         </div>
       </div>
       <div class="download-btn-container">
-        <a href="CV___english.pdf" download="Andrei_Cristea_CV.pdf" class="download-btn"
+        <a href="CV_English_Nov_2026.pdf" download="Andrei_Cristea_CV.pdf" class="download-btn"
           aria-label="Download my CV as PDF">
           <svg class="download-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -1015,18 +893,103 @@
     </section>
 
     <section class="section card">
+      <h2>Experience</h2>
+      <ul>
+        <li class="experience-item">
+          <strong>Data Management Consultant</strong><span class="separator">•</span><span class="date">SAP SE</span><br />
+          <span class="date">Apr 2025 – Present</span>
+          <ul style="margin-top: 8px;">
+            <li>Delivered client-facing data migration work for Merck Group and Teva across TCC, DCC, and QCC SAP environments; produced formal migration reports — 4 registered client staffing days on Merck</li>
+            <li>Shipped multiple features for a production enterprise RAG AI assistant — Tags Module, BTP routing fix eliminating Workzone dependency, conversation management, and filter redesign — using Node.js, SAP CAP, and SAP BTP</li>
+            <li>Independently designed, built, and presented an AI CV Reviewer to an external SAP stakeholder; received positive feedback and commitment to share with their internal team</li>
+            <li>Earned 3 SAP certifications: SAP Generative AI Developer (100%), SAPTEC (92%), SAP HANA Data Engineer</li>
+          </ul>
+        </li>
+        <li class="experience-item">
+          <strong>Teaching Assistant</strong><span class="separator">•</span><span class="date">University of Bucharest</span><br />
+          <span class="date">Oct 2025 – Feb 2026</span>
+          <ul style="margin-top: 8px;">
+            <li>Guided 30+ first-year CS students through x86 assembly programming, memory management, and low-level system concepts in Computer Organization and Design</li>
+          </ul>
+        </li>
+        <li class="experience-item">
+          <strong>QA Tester Intern</strong><span class="separator">•</span><span class="date">Code of Talent</span><br />
+          <span class="date">Sep – Dec 2025</span>
+          <ul style="margin-top: 8px;">
+            <li>Identified and documented 40+ software defects across web application features through manual and automated testing</li>
+            <li>Automated test workflows using Java and Selenium; collaborated with developers to improve release quality</li>
+          </ul>
+        </li>
+        <li class="experience-item">
+          <strong>Backend Developer</strong><span class="separator">•</span><span class="date">Scout Society NGO</span><br />
+          <span class="date">Oct 2025 – Present</span>
+          <ul style="margin-top: 8px;">
+            <li>Engineered scalable APIs and database functionalities for a youth volunteering management platform using Next.js and Supabase</li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+
+    <section class="section card">
+      <h2>Achievements &amp; Leadership</h2>
+      <ul>
+        <li class="achievement-item">
+          <strong>1st Place, NXP Line Follower 2026</strong><br />
+          Placed 1st among 20 competing teams at the NXP-sponsored Line Follower Robotics Competition; built and programmed an autonomous robot navigating a track using sensors and motor control
+        </li>
+        <li class="achievement-item">
+          <strong>Winner, Vibehack Hackathon 2025</strong><br />
+          Led technical development in a 4-person team; built a mobile app prototype improving access to youth volunteering opportunities
+        </li>
+        <li class="achievement-item">
+          <strong>Erasmus+ Youth Exchange &mdash; Team Lead &amp; Participant</strong><span class="separator">•</span><span class="date">2025, 2026</span><br />
+          Participated in 4 Erasmus+ exchanges across Portugal (Azores), Greece, Spain, and Italy, leading 2 of them; engaged with European peers on AI, gender equality, sustainability, and community well-being
+        </li>
+        <li class="achievement-item">
+          <strong>Captain, Romanian National Basketball Team</strong><span class="separator">•</span><span class="date">High School, 2023</span><br />
+          Coordinated team strategy, fostered collaboration, and represented Romania internationally
+        </li>
+
+      </ul>
+    </section>
+
+    <section class="section card">
+      <h2>Projects</h2>
+      <ul>
+        <li class="project-item">
+          <strong>Merck Group &mdash; SAP Data Migration</strong><br />
+          Client-facing data migration engagement for Merck Group (Chemicals); executed structured imports across TCC, DCC, and QCC SAP environments and produced formal migration reports
+        </li>
+        <li class="project-item">
+          <strong>FAIA &mdash; Internal AI Assistant</strong><br />
+          Production RAG AI assistant deployed internally at SAP BTP; independently delivered Tags Module, BTP routing overhaul eliminating Workzone dependency, and conversation management &mdash; active end users, usage metrics tracked &mdash; Node.js, SAP CAP, CDS
+        </li>
+        <li class="project-item">
+          <strong>AI CV Reviewer</strong><br />
+          Independently designed and built an AI-based CV review tool using LLM APIs; presented the prototype to an external SAP stakeholder who committed to sharing it with their internal team
+        </li>
+        <li class="project-item">
+          <strong>QR Reader/Generator</strong><br />
+          Built a complete QR encoder and decoder from scratch without external libraries
+        </li>
+        <li class="project-item">
+          <strong>x86 File System Manager</strong><br />
+          Simulated file system operations in memory — add, delete, defragment, and directory analysis — in x86 assembly
+        </li>
+      </ul>
+    </section>
+
+    <section class="section card">
       <h2>Education</h2>
       <ul>
         <li class="experience-item">
           <strong>BSc Computer Science</strong><br />
-          <span class="date">University of Bucharest</span><span class="separator">•</span><span class="date">2024–2027
-            (Expected)</span><br />
+          <span class="date">University of Bucharest</span><span class="separator">•</span><span class="date">Expected 2027</span><br />
           GPA: <strong>8.61/10</strong>
         </li>
         <li class="experience-item">
           <strong>High School Diploma</strong><br />
-          <span class="date">Spiru Haret, Bucharest</span><span class="separator">•</span><span
-            class="date">2024</span><br />
+          <span class="date">Colegiul Na&#x21B;ional &ldquo;Spiru Haret&rdquo;, Bucharest</span><span class="separator">•</span><span class="date">2024</span><br />
           Baccalaureate: <strong>9.76/10</strong>
         </li>
       </ul>
@@ -1037,35 +1000,35 @@
       <div class="skill-category">
         <strong>Programming Languages</strong>
         <div class="skills-list">
-          <span class="skill-tag">C/C++</span>
+          <span class="skill-tag">C</span>
+          <span class="skill-tag">C++</span>
           <span class="skill-tag">Python</span>
           <span class="skill-tag">JavaScript</span>
           <span class="skill-tag">TypeScript</span>
-          <span class="skill-tag">HTML/CSS</span>
-          <span class="skill-tag">Assembly (x86)</span>
           <span class="skill-tag">SQL</span>
-          <span class="skill-tag">Bash</span>
+          <span class="skill-tag">Assembly (x86)</span>
+          <span class="skill-tag">Java</span>
         </div>
       </div>
       <div class="skill-category">
-        <strong>Tools &amp; Frameworks</strong>
+        <strong>Frameworks &amp; Tools</strong>
         <div class="skills-list">
-          <span class="skill-tag">Git</span>
-          <span class="skill-tag">Docker</span>
           <span class="skill-tag">Node.js</span>
           <span class="skill-tag">Angular</span>
-          <span class="skill-tag">Firebase</span>
-          <span class="skill-tag">MongoDB</span>
-          <span class="skill-tag">Linux</span>
+          <span class="skill-tag">React</span>
+          <span class="skill-tag">Git</span>
+          <span class="skill-tag">Docker</span>
+          <span class="skill-tag">Supabase</span>
+          <span class="skill-tag">Postman</span>
         </div>
       </div>
       <div class="skill-category">
-        <strong>Testing &amp; DevOps</strong>
+        <strong>SAP Technologies</strong>
         <div class="skills-list">
-          <span class="skill-tag">Postman</span>
-          <span class="skill-tag">CI/CD</span>
-          <span class="skill-tag">Debugging</span>
-          <span class="skill-tag">Deployment</span>
+          <span class="skill-tag">SAP BTP</span>
+          <span class="skill-tag">SAP CAP</span>
+          <span class="skill-tag">SAP HANA</span>
+          <span class="skill-tag">SAP AI Core</span>
         </div>
       </div>
       <div class="skill-category">
@@ -1081,88 +1044,11 @@
     </section>
 
     <section class="section card">
-      <h2>Experience</h2>
-      <ul>
-        <li class="experience-item">
-          <strong>Teaching Assistant</strong><span class="separator">•</span><span class="date">University of
-            Bucharest</span><br />
-          <span class="date">October 2025 – Present</span><br />
-          Supported 30+ first-year students in Computer Organization and Design (assembly language).
-        </li>
-        <li class="experience-item">
-          <strong>QA Tester Intern</strong><span class="separator">•</span><span class="date">Code of
-            Talent</span><br />
-          <span class="date">September – December 2025</span><br />
-          Tested product features and documented 40+ issues; collaborated with developers to improve release quality.
-        </li>
-        <li class="experience-item">
-          <strong>Backend Developer Volunteer</strong><span class="separator">•</span><span class="date">Scout Society
-            NGO</span><br />
-          <span class="date">October 2025 – Present</span><br />
-          Engineered scalable backend for youth volunteering platform using Next.js and SupaBase.
-        </li>
-        <li class="experience-item">
-          <strong>Lenovo Summer School</strong><br />
-          <span class="date">June – August 2025</span><br />
-          Explored DevOps, frontend/backend development, and cybersecurity in enterprise-level workshops.
-        </li>
-        <li class="experience-item">
-          <strong>Lenovo Frontend Workshop</strong><br />
-          <span class="date">March – May 2025</span><br />
-          Developed web apps using Node.js and Angular; practiced modular design and deployment.
-        </li>
-      </ul>
-    </section>
-
-    <section class="section card">
-      <h2>Achievements &amp; Leadership</h2>
-      <ul>
-        <li class="achievement-item">
-          <strong>Winner, Vibehack Hackathon 2025</strong><br />
-          Led technical development in a 4-person team; built a mobile app prototype improving access to youth
-          volunteering opportunities.
-        </li>
-        <li class="achievement-item">
-          <strong>Captain, Romanian National Basketball Team</strong><span class="separator">•</span><span
-            class="date">High School, 2023</span><br />
-          Coordinated team strategy, fostered collaboration, and represented Romania internationally.
-        </li>
-        <li class="achievement-item">
-          <strong>Participant, Waves of Change Youth Exchange Program</strong><span class="separator">•</span><span
-            class="date">2025</span><br />
-          Engaged with European peers in Azores, Portugal on sustainability, youth empowerment, and intercultural
-          dialogue.
-        </li>
-      </ul>
-    </section>
-
-    <section class="section card">
-      <h2>Projects</h2>
-      <ul>
-        <li class="project-item">
-          <strong>QR Reader/Generator</strong><br />
-          Built a QR code tool from scratch without external libraries.
-        </li>
-        <li class="project-item">
-          <strong>2048 + Database</strong><br />
-          Recreated the 2048 game with backend integration to store top scores.
-        </li>
-        <li class="project-item">
-          <strong>x86 File System Manager</strong><br />
-          Simulated file operations in memory: add, delete, defragment, analyze directory sizes.
-        </li>
-        <li class="project-item">
-          <strong>Airways SQL Database</strong><br />
-          Designed and queried a relational database for airline operations.
-        </li>
-      </ul>
-    </section>
-
-    <section class="section card">
       <h2>Languages</h2>
       <ul>
         <li><strong>Romanian:</strong> Native</li>
         <li><strong>English:</strong> Fluent</li>
+        <li><strong>Spanish:</strong> Beginner</li>
       </ul>
     </section>
   </main>
@@ -1184,7 +1070,7 @@
     }
 
     // Log visitor count to console (only you can see this)
-    console.log('%c👀 CV Visitor Tracking Active', 'color: #2563eb; font-size: 14px; font-weight: bold;');
+    console.log('%c CV Visitor Tracking Active', 'color: #2563eb; font-size: 14px; font-weight: bold;');
     console.log('%cTo view visitor counter, add ?admin=true to the URL', 'color: #64748b; font-size: 12px;');
   </script>
 </body>
